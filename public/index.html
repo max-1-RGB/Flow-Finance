@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meine App</title>
+    <style>
+      body {
+        background: #ECEFF1;
+        color: rgba(0,0,0,0.87);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #app {
+        max-width: 360px;
+        margin: 100px auto 16px;
+        padding: 32px 24px;
+        background: white;
+        border-radius: 3px;
+        box-shadow:
+          0 1px 3px rgba(0,0,0,0.12),
+          0 1px 2px rgba(0,0,0,0.24);
+      }
+      @media (max-width: 600px) {
+        body {
+          border-top: 16px solid #ffa100;
+          background: white;
+        }
+        #app {
+          margin-top: 0;
+          box-shadow: none;
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Hier rendert deine App, z. B. React, Vue, Vanilla JS -->
+      <div id="root"></div>
+    </div>
+    <!-- Dein gebündeltes Skript -->
+    <script src="bundle.js"></script>
+  </body>
+</html>
