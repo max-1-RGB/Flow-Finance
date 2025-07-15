@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 220 20% 96%; /* Light Gray Blue */
+    --foreground: 220 20% 10%; /* Dark Gray Blue */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+    --primary: 120 100% 19.6%; /* Dark Green #006400 */
+    --primary-foreground: 120 25% 95%; /* Light Greenish White */
+    --secondary: 220 15% 90%;
+    --secondary-foreground: 220 20% 20%;
+    --muted: 220 15% 90%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 260 100% 74.9%; /* Purple #B180FF */
+    --accent-foreground: 260 100% 15%; /* Dark Purple */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 120 100% 19.6%; /* Primary color for rings */
+    --chart-1: 120 70% 50%;
+    --chart-2: 260 70% 60%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 200 75% 55%;
+    --chart-5: 0 75% 60%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors for light theme */
+    --sidebar-background: 0 0% 99%; /* Slightly off-white */
+    --sidebar-foreground: 220 20% 25%;
+    --sidebar-primary: 120 100% 19.6%;
+    --sidebar-primary-foreground: 120 25% 95%;
+    --sidebar-accent: 220 15% 92%; /* Subtle accent for hover */
+    --sidebar-accent-foreground: 120 100% 19.6%;
+    --sidebar-border: 220 15% 88%;
+    --sidebar-ring: 120 100% 19.6%;
+  }
+
+  .dark {
+    --background: 210 44.1% 16.7%; /* Dark Blue #192A3E */
+    --foreground: 210 20% 88%; /* Light Grayish Blue for text */
+    --card: 210 40% 22%; /* Slightly lighter than bg for cards */
+    --card-foreground: 210 20% 88%;
+    --popover: 210 40% 20%;
+    --popover-foreground: 210 20% 88%;
+    --primary: 120 80% 35%; /* Brighter Green for dark bg */
+    --primary-foreground: 120 25% 95%;
+    --secondary: 210 30% 25%;
+    --secondary-foreground: 210 20% 90%;
+    --muted: 210 30% 25%;
+    --muted-foreground: 210 15% 65%;
+    --accent: 260 100% 74.9%; /* Purple #B180FF */
+    --accent-foreground: 260 100% 95%; /* Lighter purple for text on accent */
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 30% 30%;
+    --input: 210 30% 30%;
+    --ring: 120 80% 40%; /* Brighter primary for rings in dark */
+    --chart-1: 120 70% 55%;
+    --chart-2: 260 70% 65%;
+    --chart-3: 30 80% 60%;
+    --chart-4: 200 75% 60%;
+    --chart-5: 0 75% 65%;
+
+    /* Sidebar specific colors for dark theme */
+    --sidebar-background: 210 42% 20%; /* Slightly lighter/different shade from main dark bg */
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 120 80% 35%;
+    --sidebar-primary-foreground: 120 25% 95%;
+    --sidebar-accent: 210 35% 28%; /* Subtle accent for hover */
+    --sidebar-accent-foreground: 120 80% 65%; /* Accent text color */
+    --sidebar-border: 210 30% 30%;
+    --sidebar-ring: 120 80% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.font-headline {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), sans-serif;
+}
